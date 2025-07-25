@@ -1,8 +1,8 @@
-
-import  { MuiTypography } from './Mui_components/MuiTypography'
+import MuiModal from "./Mui_components/MuiModal";
+import { MuiTypography } from "./Mui_components/MuiTypography";
+import MuiParentModal from "./Mui_components/MuiModalNestedChild";
 
 function App() {
- 
   return (
     <>
       {/* <div>
@@ -24,11 +24,13 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p> */}
+      </p>  */}
 
+      <MuiModal />
+      <MuiParentModal />
       <MuiTypography />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
